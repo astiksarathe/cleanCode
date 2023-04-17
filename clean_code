@@ -1,0 +1,204 @@
+
+@what is clean code
+
+should be readable and meaningful
+should reduce cognitive load
+should be concise and to the point
+should avoid unituitive names, complex nesting and big code blocks
+should follo common best practices and pattern 
+should be fun to write and to maintain
+
+
+@clean architecture
+
+where to write which code
+focus on the project as whole
+
+@Naming
+
+name should be meaningful
+@
+wel named things allow  readers to understand  your code  without going through  it in detail
+
+@ how do we name things correctly 
+= user nouns and sort phrases with adjuctive (variable)
+= use verbs sort phrases with adjuctive (functions)
+= use nouns or short phrases with nouns (class)
+
+
+@Name Casing
+
+1) snake case  = snake_case ; python 
+2) camel case  = snakeCase ; java and javascript 
+3) pascal case  = SnakeCase ; java, javascript, python classes
+4) kebab case = <kebab-case> HTML
+
+
+Notes:
+        * Boolean name should also be a question mark ex isAtative, isLoggedIn;
+        * Should try to add more details in name without adding redendency
+
+
+avoid
+        * avoid slangs
+        * unclear abbreviations ymdt = "20210121CET"
+        * avoid disinformation
+        * always use distinctive name
+        * stay consistent
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+=> Comments
+
+Notes:
+        * Comments are mostly bad
+        * legal Comments
+        * can add Comments for regular expression
+        * documentation Comments
+        * should avoid misleading Comments
+        * avoid redundent Comments 
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+=> Code Formatting 
+
+vertical Formatting 
+        space between lines 
+        grouping of code
+
+
+horizontal Formatting
+        indentation
+        space between code
+        line width
+
+Formatting is important and grealty improve code readability 
+Formatting rules differ between languages
+Follow language specific convertions and guidelines
+
+@Vertical Formatting
+
+vertical Formatting is all about placed vertical space in our code file
+
+code should be readable like easy  - top to bottom without too many " jumps"
+
+conside splitting file with multiple concept
+differnt concept shoud be seperated by space
+similar concept should not be seperated by space
+the method we are calling its diffenation should be keep near to that call
+use indentation even if not required technically
+break long statement into multiple short one
+use clear but not unreadablylong names
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+Functions
+
+calling the functoin should be clear, like no of argument type of argument etc;
+
+Note 
+        * minimixe the number of parameter
+        * avoid funtions with more than or equal to 3 argument
+        * should be fun to write and to maintain  
+        * should follow common best practices and pattern
+        * should avoid unintuitive names, complex nesting and big code blocks
+        * should be readable and meaningful
+        * should reduce cognitive load
+        * should be consise and "to the point"
+        * should avoid Boolean as a parameter
+        * when we have more than 3 parameter, we can use object and array as parameter, at reeciving  
+           end we can use distructurig
+        * function length matter and they should be small and clear
+        * function do one thing always
+        * try not to mix levels of abstractions
+        * dont repeat yourself because in case of change, will have to change on multiple places
+
+
+SIDE EFFECT
+
+=> A side effect is an operation which doest not just act an function inputs and change the function
+        output but which instead changes the overall system / program state
+=> side effects are not automatically bad, sometime we need them in our program. but unexpected 
+        side effect shoud be avoided
+
+=> the name of a funct' should signal or imply that a side effect is likely to occur
+
+=> you should keep a check in function name while side effect outerwise move that sideeffect in seperate function
+
+
+
+        CODE STRUCTURE AND ERROR
+
+prefer positive checks over negative checks
+avoid deep nesting
+using factory functions and polymorphism
+utilize error
+use guard & fail fast
+always try to split the code but not too much
+always use build in error mechanism 
+
+
+        OBJECT CLASSES AND DATA CONTAINERS / STRUCTURE
+
+OBJECTS
+
+        private internals / properties, public API(method)
+        contain your business logic (in oops)
+        abstractions over concretions
+
+DATA CONTAINERS / STRUCTURE
+
+        public internals / properties, (almost) no API (methods)
+        store and transport  data
+        concretions only
+
+Notes:
+        Classes should be small
+        classes should have a single responsibility principle (SRP)
+
+
+        COHESION
+
+                How much your class methods using the class properties ?
+
+                maximum cohesion => all methods each use all properties
+                No cohesion => all methods don't use any class properties 
+                 
+drilling deeply into un object is discourage by law of demeter
+dont depend on the internals of strangers
+
+TELL DONT ASK   
+
+
+SOLID LAW 
+
+     S   single responsibility principle
+     O  open closed principle
+     L   liskov substitution principle
+     I    interface segregation principle
+     D   dependancy inversion principle
+
+
+INTERFACE SEGREGATION PRINCIPLE
+
+	many client-specific interfaces are better than one fenertal purpose interface
+
+LISKOV SUBSTITUTION PRINSIPLE
+
+	Objects should be replaceable with instances of their subclasses without altering the behavior
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
